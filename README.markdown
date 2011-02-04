@@ -58,7 +58,7 @@ With **SBT Library Resolver** you shouldn't leave SBT console to resolve your de
 
 ## Configuration
 
-Add **SBT-Library-Resolver** to the plugin configuration of your project(e.g., `project\plugins\Plugins.scala`):
+Add **SBT-Library-Resolver** to the plugin configuration of your project (e.g., `project\plugins\Plugins.scala`):
 
 	import sbt._
 
@@ -69,7 +69,7 @@ Add **SBT-Library-Resolver** to the plugin configuration of your project(e.g., `
 
 	}
 
-Mix `com.vasilrem.sbtplugins.SbtLibPlugin` with the project definition (`project\build\<project>.scala`):
+Mix `com.vasilrem.sbtplugins.SbtLibPlugin` into the project definition (`project\build\<project>.scala`):
 
 	import sbt._
 	import com.vasilrem.sbtplugins._
