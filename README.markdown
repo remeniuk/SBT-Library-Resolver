@@ -2,8 +2,9 @@ Possibility to have unmanaged dependencies under `/lib` folder greatly increases
 
 Another problem: you may neither have an idea, what artifact you need, nor have a JAR by the hand, and only know the classname. The most of modern IDEs with good Maven integration can suggest you what libraries in the known repositories contain the class you're looking for. Otherwise, search engines like **[http://www.jarvana.com/jarvana](http://www.jarvana.com/jarvana)** come to the rescue.
 
+##SBT Library Resolver
 
-With **SBT-Library-Resolver** you shouldn't leave SBT console to resolve your dependencies:
+With **SBT Library Resolver** you shouldn't leave SBT console to resolve your dependencies:
 
 **1.**  Find artifacts that correspond to the JAR, specifying JAR name (input is auto-completed with the names of JARs under /lib):
 
