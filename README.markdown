@@ -1,6 +1,6 @@
 Possibility to have unmanaged dependencies under `/lib` folder greatly increases development speed - you don't have to go to project definition every time you need to add another artifact. But bunch of JARs laying under /lib can turn into over time into chaos. You may forget (or don't know) what Artifact (JAR/POM) corresponds to unspecified JAR.
 
-Another problem: you may neither have an idea, what artifact you need, nor have a JAR by the hand, and only know the classname. The most of modern IDEs with good Maven integration can suggest you what libraries in the known repositories contain the class you're looking for. Otherwise, search engines like [[http://www.jarvana.com/jarvana]] come to the rescue.
+Another problem: you may neither have an idea, what artifact you need, nor have a JAR by the hand, and only know the classname. The most of modern IDEs with good Maven integration can suggest you what libraries in the known repositories contain the class you're looking for. Otherwise, search engines like **[http://www.jarvana.com/jarvana](http://www.jarvana.com/jarvana)** come to the rescue.
 ***
 With **SBT-Library-Resolver** you shouldn't leave SBT console to resolve your dependencies:
 
