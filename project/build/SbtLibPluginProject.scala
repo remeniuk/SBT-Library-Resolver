@@ -9,4 +9,7 @@ class SbtLibPluginProject(info: ProjectInfo) extends PluginProject(info){
 	val htmlunit = "net.sourceforge.htmlunit" % "htmlunit" % "2.4"
 	val specs_1_6_2 = "org.scala-tools.testing" % "specs" % "1.6.2" % "test"	
 	
+	override def managedStyle = ManagedStyle.Maven
+	lazy val publishTo = Resolver.file("GitHub", new java.io.File("../remeniuk.github.com/maven/"))
+	
 } 			

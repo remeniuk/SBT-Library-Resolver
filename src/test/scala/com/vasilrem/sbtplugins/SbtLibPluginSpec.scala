@@ -17,7 +17,11 @@ class SbtLibPluginSpec extends Specification {
 	}
 	
 	"specs-1.6.2.jar is successfully resolved" in {
-		SbtLibPluginTest.resolveArtifactByJarName("specs-1.6.2.jar") must be equalTo(Right(ResolvedArtifact("org.scala-tools.testing", "specs", "1.6.2", "http://repo1.maven.org/maven2")))
+		SbtLibPluginTest.resolveArtifactsByJarName("specs-1.6.2.jar")(0) must be equalTo(ResolvedArtifact("org.scala-tools.testing", "specs", "1.6.2"))
+	}
+	
+	"Find artifacts for class com.gargoylesoftware.htmlunit.WebClient" in {	
+		SbtLibPluginTest.resolveArtifactByClass("com.gargoylesoftware.htmlunit.WebClient", 1).size must be greaterThan(50)
 	}
   
 }
